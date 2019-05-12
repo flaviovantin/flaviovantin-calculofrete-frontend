@@ -25,6 +25,7 @@ class Home extends Component {
                 <li>API Gateway - usado para gerenciamento e exposição da API. Faz a integração entre frontend e backend (Lambdas)</li>
                 <li>Lambda - aplicação Java servless. Suporta um número ilimitado de request de forma elástica - para cada resquest, um novo Lambda é executado.</li>
                 <li>DynamoDB - base de dados NoSQL</li>
+                <li>Frontend: aplicação feita em ReactJS (Redux), ES6, React-bootstrap</li>
               </ul>
             </li>
             <li><u>O primeiro acesso feito em cada Lambda levará em torno de 10 segundos para ser executado.</u> Isso se deve ao fato deste recurso não estar em uso (lambda não "aquecido"), no entanto uma vez executado, a resposta é muito rápida. Nesta implementação, existem dois lambdas: um para a listagem da tabela de fretes, outra para a execução do cálculo. <br/>O função Lambda se mantem em execução por aproximadamente de 3 a 15 minutos. Para esta solução, <u>não</u> foi considerado um mecanismo de keep alive.</li>
